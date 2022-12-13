@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  awsm:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: awsm
+    ports:
+      - 3000:3000
+    tty: true
